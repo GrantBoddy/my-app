@@ -1,0 +1,104 @@
+.FilteredList {
+    margin: 30px auto;
+    padding: 25px;
+    border: none;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    max-width: 700px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.FilteredList h2 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.filter-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.search-box {
+    flex: 1;
+    margin-right: 15px;
+}
+
+.search-box input {
+    padding: 10px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.filter-options {
+    min-width: 150px;
+}
+
+.filter-options select {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    width: 100%;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    appearance: menulist;
+    -webkit-appearance: menulist;
+    color: #333;
+}
+
+.filter-options select:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.filter-options select option {
+    padding: 10px;
+}
+
+@media (max-width: 576px) {
+    .filter-controls {
+        flex-direction: column;
+    }
+    
+    .search-box {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    .filter-options {
+        width: 100%;
+    }
+    
+    .filter-dropdown {
+        width: 100%;
+    }
+    
+    .filter-dropdown button {
+        width: 100%;
+        text-align: left;
+    }
+}
